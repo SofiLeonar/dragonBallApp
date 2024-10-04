@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blue"
+    tools:context=".Bienvenida">
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginBottom="4dp"
+      android:text="Leonardelli Sofia"
+      android:textColor="@color/yellow"
+      android:textSize="10sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.952"
+      app:layout_constraintStart_toStartOf="parent" />
+
+  <ImageView
+      android:id="@+id/titulo"
+      android:layout_width="191dp"
+      android:layout_height="175dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/titulo" />
+
+  <TextView
+      android:id="@+id/bienvenidaText"
+      android:layout_width="265dp"
+      android:layout_height="99dp"
+      android:layout_marginTop="4dp"
+      android:background="@drawable/cuadro_dialogos"
+      android:fontFamily="serif"
+      android:gravity="center"
+      android:textColor="@color/black"
+      android:padding="5dp"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/titulo" />
+
+  <TextView
+      android:id="@+id/instruccionesText"
+      android:layout_width="264dp"
+      android:layout_height="121dp"
+      android:layout_marginTop="19dp"
+      android:fontFamily="serif"
+      android:gravity="center"
+      android:padding="5dp"
+      android:text="Cada enemigo que acabó con Krillin una vez tiene una esfera, ¡y solo respondiendo correctamente podremos derrotarlos y conseguirla!"
+      android:textColor="@color/white"
+      android:textSize="16sp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/bienvenidaText" />
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/comencemosBoton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/botones"
+      android:layout_marginTop="10dp"
+      android:padding="10dp"
+      android:text="Comencemos"
+      android:onClick="comencemos"
+      android:textColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/instruccionesText" />
+
+
+  <androidx.appcompat.widget.AppCompatButton
+      android:id="@+id/volverAlInicio"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:background="@drawable/botones"
+      android:text="Volver"
+      android:textColor="@color/black"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.498"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/comencemosBoton" />
+
+  <ImageView
+      android:id="@+id/imageGokuInicio"
+      android:layout_width="210dp"
+      android:layout_height="264dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:srcCompat="@drawable/gokuinicio" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
